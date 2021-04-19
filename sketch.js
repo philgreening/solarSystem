@@ -22,9 +22,8 @@ function draw() {
         celestialObj(color(0,0,255), 80); // EARTH
         pop();
 
-    rotate(radians(-speed*2));
-
         push();
+        rotate(radians(-speed*2));
         translate(100, 0);
         celestialObj(color(255), 30); //MOON
         rotate(radians(speed*3));
@@ -34,9 +33,11 @@ function draw() {
         celestialObj(color(0, 255, 0), 15); //ASTEROID
         pop();
 
-    rotate(radians(speed*4));
-    translate(60, 0);
-    celestialObj(color(255, 0, 0), 20); //MOON2
+        push();
+        rotate(radians(speed*4));
+        translate(60, 0);
+        celestialObj(color(255, 0, 0), 20); //MOON2
+        pop();
 
     pop();
 }
